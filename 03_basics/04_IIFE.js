@@ -7,6 +7,7 @@
 })(); //
 
 
-((name) => {                               // if you run this funtion then end the above code first using semicolon ;
+((name) => {                                 // if you run this funtion then end the above code first using semicolon ;
     console.log(`DB Connected tWo ${name}`);
+
 })('Rahul')
