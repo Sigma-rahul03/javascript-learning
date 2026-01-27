@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM learning on Chai aur code </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li class="lisr-item">one</li>
+            <li class="lisr-item">two</li>
+            <li class="lisr-item">three</li>
+            <li class="lisr-item">four</li>
+            <li class="lisr-item">five</li>
+
+            <!-- document.getElementsByClassName('list-item')
+HTMLCollection(5) [li.list-item, li.list-item, li.list-item, li.list-item, li.list-item]
+const tempClassList = document.getElementsByClassName('list-item')
+undefined
+tempClassList
+HTMLCollection(5) [li.list-item, li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-item4: li.list-itemlength: 5[[Prototype]]: HTMLCollectionitem: ƒ item()length: (...)namedItem: ƒ namedItem()constructor: ƒ HTMLCollection()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "HTMLCollection"get length: ƒ length()[[Prototype]]: Object
+tempClassList.foreach(function(li) {
+    console.log(li)
+})
+VM396:1 Uncaught TypeError: tempClassList.foreach is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM396:1Understand this error
+
+//converting Nodelist to Array list
+Array.from(tempClassList)
+(5) [li.list-item, li.list-item, li.list-item, li.list-item, li.list-item] -->
+
+        </ul>
+    </div>
+
+<!-- // Change anything using DOM Nodelist //
+document.querySelectorAll('h3')
+const allH3 = document.querySelectorAll('h3')
+allH3[0].innerText
+allH3.forEach(function (h3) {
+h3.style.color = 'red'
+h3.style.backgroundColor = 'green'
+h3.innerText = 'RAHUL'  
+}) -->
+
+</body>
+</html>
